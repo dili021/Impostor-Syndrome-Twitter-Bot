@@ -7,6 +7,3 @@ Dotenv.load
 
 bot = ImpostorBot.new
 bot.streaming
-
-
-
