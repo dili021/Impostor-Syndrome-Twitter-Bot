@@ -1,9 +1,9 @@
-require 'dotenv'
-Dotenv.load
-
 class ImpostorBot
   include InputOutput
   def initialize
+    p "Initializing impostor_bot..."
+    sleep 3
+    p "Scanning Twitter public stream"
     @keys = {
       consumer_key: ENV['CONSUMER_KEY'],
       consumer_secret: ENV['CONSUMER_SECRET'],

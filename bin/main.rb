@@ -6,4 +6,5 @@ require 'dotenv'
 Dotenv.load
 
 bot = ImpostorBot.new
-bot.streaming
+
+bot.streaming.reply
