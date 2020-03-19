@@ -1,3 +1,5 @@
+require_relative 'module.rb'
+
 class ImpostorBot
   include InputOutput
   def initialize
@@ -10,6 +12,6 @@ class ImpostorBot
       access_token: ENV['ACCESS_TOKEN'],
       access_token_secret: ENV['ACCESS_TOKEN_SECRET']
     }
-    @keyword = 'impostor syndrome -rt'
+    @keyword = 'impostor syndrome'
   end
 end
