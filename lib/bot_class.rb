@@ -10,6 +10,6 @@ class ImpostorBot
       access_token: ENV['ACCESS_TOKEN'],
       access_token_secret: ENV['ACCESS_TOKEN_SECRET']
     }
-    @keyword = 'impostor syndrome'
+    @keyword = 'impostor syndrome -rt'
   end
 end

@@ -7,4 +7,4 @@ Dotenv.load
 
 bot = ImpostorBot.new
 
-bot.streaming.reply
+bot.streaming.reply.retweet
