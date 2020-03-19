@@ -1,5 +1,4 @@
 require_relative '../lib/bot_class.rb'
-# require_relative '../lib/module.rb'
 
 describe ImpostorBot do
   let(:bot) {ImpostorBot.new}
