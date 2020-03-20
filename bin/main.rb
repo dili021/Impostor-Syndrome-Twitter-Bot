@@ -1,10 +1,9 @@
 #!/usr/bin/env ruby
+require_relative './lib/twitter_bot.rb'
 require 'twitter'
-require './lib/module.rb'
-require './lib/bot_class.rb'
 require 'dotenv'
 Dotenv.load
 
-bot = ImpostorBot.new
+bot = TwitterBot.new
 
-bot.streaming.reply.retweet
+bot.stream.reply.retweet
