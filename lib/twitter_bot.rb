@@ -4,7 +4,8 @@ Dotenv.load
 
 class TwitterBot
   def initialize
-    @keyword = "impostor syndrome"
+    p 'Initializing anti-impostor-syndrome-mechanism...'
+    @keyword = 'corona'
     @keys = {
       consumer_key: ENV['CONSUMER_KEY'],
       consumer_secret: ENV['CONSUMER_SECRET'],
@@ -16,10 +17,11 @@ class TwitterBot
   def stream
     @stream_client = Twitter::Streaming::Client.new(@keys)
     @stream_client.filter(track: @keyword) do |object|
+      p 'Impostor syndrome detected: '
       p object.text if object.is_a?(Twitter::Tweet)
       tweet_id = object.id
       user_name = object.user.screen_name
-      sleep 1
+      sleep 2
       reply(tweet_id, user_name)
       sleep 1
       retweet(tweet_id)
@@ -28,18 +30,16 @@ class TwitterBot
 
   def reply(tweet_id, user_name)
     @post_client = Twitter::REST::Client.new(@keys)
-    @message = "feeling that way is a sign that you are pushing yourself to your limits and growing. Keep it up!"
-    @post_client.update("@#{user_name} #{@message}", in_reply_to_status_id: tweet_id)
-    puts "replied"
+    @messages = ['Feeling that way is a sign that you are pushing yourself to your limits and growing. Keep it up!',
+                 "You're not an imposter, don't give up!",
+                 "Everyone feels like an impostor sometimes. It means you're on new grounds."]
+    @post_client.update("@#{user_name} #{@messages.sample}", in_reply_to_status_id: tweet_id)
+    puts 'replied'
   end
 
   def retweet(tweet_id)
     @post_client = Twitter::REST::Client.new(@keys)
     @post_client.retweet(tweet_id)
-    puts "rewteeted" 
+    puts 'rewteeted'
   end
 end
-
-bot = TwitterBot.new
-
-bot.stream.reply.retweet
