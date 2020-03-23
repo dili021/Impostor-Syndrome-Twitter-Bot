@@ -1,46 +1,15 @@
-> Title 
+> impostor_syndrome_bot
 
-![screenshot]()
+![screenshot](screenshot.png)
 
+# Description
+
+- A twitter bot that recieves live streaming of new tweets, detects the ones containing the keywords "impostor syndrome" and replies with a cheerful comment.
 
 # Built With
 
-
-
-
-# Live Demo
-
-[Live Demo Link]()
-
-# Getting Started
-
-
-
-# Prerequisites
-
-- Get your browsers up to date
-
-# Setup
-
-- Clone the repository on your local machine
-- cd into the folder, find the index.html file and open it
-
-# Install
-
-- Install VSCode or any code editor you like
-## Rubocop (Ruby linter) installation
-- Run this command on your terminal in order to install: npm install stylelint stylelint-config-recommended --save-dev
-
-### Run tests
-
-
-- Go to http://validator.w3.org/ , upload the index.html file to test it.
-
-### Deployment
-
-- Get an online web hosting service
-- Upload all the files in the htdocs folder of your domain
-- Access your domain name in browser
+- Ruby
+- Twitter gem
 
 ## Authors
 
@@ -53,15 +22,19 @@ Stefan Dili
 
 [@linkedin](https://linkedin.com/in/stefan-dili)
 
+## Making this project your own
+
+- First fork the repo and download to your machine. You will need the bundler, twitter, and dotenv gems for this project. To install them run `gem install bundler` in your terminal, and then run `bundle install` to install the other gems from the Gemfile. You will also need to register for a Twitter developer account and copy your API keys from their platform into your .env file following the .env.template. Open the project in your code editor, edit the keyword and responce to what you'd like, deploy on a app hosting platform like heroku and run it.
+
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+- Contributions, issues and feature requests are welcome!
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+- Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Hat's off to [Microverse](https://www.microverse.org) and [The Odin Project](https://theodinproject.com) for the study materials
 
-## 📝 License
