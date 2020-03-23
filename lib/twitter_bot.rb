@@ -5,7 +5,7 @@ Dotenv.load
 class TwitterBot
   def initialize
     p 'Initializing anti-impostor-syndrome-mechanism...'
-    @keyword = 'corona'
+    @keyword = 'impostor syndrome'
     @keys = {
       consumer_key: ENV['CONSUMER_KEY'],
       consumer_secret: ENV['CONSUMER_SECRET'],
