@@ -26,6 +26,12 @@ Stefan Dili
 
 - First fork the repo and download to your machine. You will need the bundler, twitter, and dotenv gems for this project. To install them run `gem install bundler` in your terminal, and then run `bundle install` to install the other gems from the Gemfile. You will also need to register for a Twitter developer account and copy your API keys from their platform into your .env file following the .env.template. Open the project in your code editor, edit the keyword and responce to what you'd like, deploy on a app hosting platform like heroku and run it.
 
+## Potential future features
+
+- Adding functionality to post an impostor syndrome related article once a day.
+- Expand the cheers with which the bot responds
+- Make the bot not respond to tweets that link to impostor syndrome articles.
+
 ## 🤝 Contributing
 
 - Contributions, issues and feature requests are welcome!
