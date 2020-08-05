@@ -13,14 +13,13 @@
 
 ## Authors
 
-👤 **Author**
-Stefan Dili
+## Author
 
-[@github](https://github.com/dili021)
-
-[@twitter](https://twitter.com/dilistefan)
-
-[@linkedin](https://linkedin.com/in/stefan-dili)
+#### Stefan Dili
+- [Website](https://stefan-dili.tech)
+- LinkedIn: [Stefan Dili](https://www.linkedin.com/in/stefan-dili/)
+- Twitter: [@dilistefan](https://twitter.com/dilistefan)
+- Email: contact@stefan-dili.tech
 
 ## Making this project your own
 
