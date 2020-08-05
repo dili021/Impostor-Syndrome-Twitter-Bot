@@ -1,4 +1,4 @@
-> impostor_syndrome_bot
+> A twitter bot that cheers you when you feel like an impostor
 
 ![screenshot](screenshot.png)
 
